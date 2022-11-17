@@ -11,9 +11,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  margin: auto;
   width: 350px;
   height: 550px;
-  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -139,4 +139,21 @@ a.button-1 {
 
 a:visited.button-1 {
   color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+}
+
+a:visited {
+  color: rgb(44, 44, 44);
+}
+
+a:hover {
+  color: rgb(44, 44, 44);
+}
+
+a:active {
+  color: blrgb(44, 44, 44) ue;
 }
