@@ -14,10 +14,11 @@ body {
   width: 350px;
   height: 550px;
   margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
   background-color: white;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .header {
@@ -53,10 +54,12 @@ h4 {
   justify-content: center;
 }
 
-.content {
+.mail,
+.tel,
+.web,
+.location {
   position: relative;
   top: -125px;
-  justify-content: center;
 }
 
 .social {
