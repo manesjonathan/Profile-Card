@@ -4,29 +4,31 @@ body {
   background-color: rgb(44, 44, 44);
 }
 
-
 h1,
 h2,
-h3 {
+h3,
+h4 {
   padding: 0;
   margin: 0;
 }
 
 h1 {
   font-size: 30px;
+  font-weight: normal;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 16px;
 }
 
-h3{
+h3 {
   text-decoration: underline;
   text-underline-offset: 10px;
 }
 
-h4{
-  font-size: 12px;
+h4 {
+  font-size: 10px;
   margin-top: -5px;
   font-weight: lighter;
 }
@@ -139,6 +141,8 @@ h4{
 
 
 .stats {
+  color: rgb(44, 44, 44);
+
   margin: auto;
   height: 85%;
   display: grid;
@@ -153,6 +157,7 @@ h4{
   justify-content: end;
   text-align: center;
 }
+
 .projects {
   grid-area: projects;
 }
@@ -190,7 +195,6 @@ a:active {
   color: rgb(44, 44, 44);
 }
 
-
 .contact {
   list-style-type: none;
   padding: 0;
@@ -199,7 +203,7 @@ a:active {
   align-items: center;
   position: absolute;
   bottom: 125px;
-  
+
 }
 
 ul {
@@ -213,4 +217,3 @@ ul {
   display: flex;
   bottom: 80px;
 }
-
