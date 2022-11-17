@@ -4,6 +4,33 @@ body {
   background-color: rgb(44, 44, 44);
 }
 
+
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2, h3 {
+  font-size: 16px;
+}
+
+h3{
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+h4{
+  font-size: 12px;
+  margin-top: -5px;
+  font-weight: lighter;
+}
+
 .container {
   position: absolute;
   background-color: white;
@@ -66,7 +93,9 @@ body {
 }
 
 .resume {
+  margin-top: 15px;
   grid-area: resume;
+  max-width: 90%;
 }
 
 .fa {
@@ -90,6 +119,8 @@ body {
   cursor: pointer;
   font-size: 12px;
   padding: 5px;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .button-2 {
@@ -102,13 +133,14 @@ body {
   font-size: 12px;
   padding: 5px;
   border: 1px solid rgb(44, 44, 44);
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+
 }
 
-p {
-  font-size: 12px;
-  color: rgb(44, 44, 44);
-}
+
 .stats {
+  margin: auto;
+  height: 85%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -133,7 +165,7 @@ p {
   grid-area: views;
 }
 
-a.button-1 {
+a:button-1 {
   color: white;
 }
 
@@ -143,7 +175,7 @@ a:visited.button-1 {
 
 a:link {
   text-decoration: none;
-  color: rgb(44, 44, 44);
+  color: white;
 }
 
 a:visited {
@@ -155,5 +187,30 @@ a:hover {
 }
 
 a:active {
-  color: blrgb(44, 44, 44) ue;
+  color: rgb(44, 44, 44);
 }
+
+
+.contact {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  align-items: center;
+  position: absolute;
+  bottom: 125px;
+  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  bottom: 80px;
+}
+
