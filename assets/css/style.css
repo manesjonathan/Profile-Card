@@ -1,6 +1,8 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-color: rgb(44, 44, 44);
 }
 
@@ -25,6 +27,9 @@ p {
   font-size: 14px;
 }
 
+/*--------------------------------------------------------------
+# Grid settings
+--------------------------------------------------------------*/
 .container {
   position: absolute;
   background-color: whitesmoke;
@@ -33,8 +38,8 @@ p {
   left: 0;
   right: 0;
   margin: auto;
-  width: 1024px;
-  height: 600px;
+  width: 75%;
+  height: 90%;
   color: #404258;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -44,16 +49,15 @@ p {
 }
 
 .logo {
-  grid-area: 1 / 1 / 2 / 2;
+  grid-area: 1/1/2/2;
 }
 
-
 .menu {
-  grid-area: 1 / 5 / 2 / 6;
+  grid-area: 1/5/2/6;
 }
 
 .ride {
-  grid-area: 1 / 1 / 11 / 6;
+  grid-area: 1/1/11/6;
   background-color: #404258;
 }
 
@@ -62,16 +66,15 @@ p {
   background-image: url("../image/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  grid-area: 2 / 4 / 10 / 9;
+  grid-area: 2/4/10/9;
 }
 
 .contact {
-  color: white;
+  color: whitesmoke;
   font-size: 12px;
-  grid-area: 7 / 1 / 9 / 3;
+  grid-area: 7/1/9/3;
 }
-
-.ul-contact {
+.contact ul {
   list-style-type: none;
   align-self: center;
   align-items: center;
@@ -81,10 +84,9 @@ p {
 
 .social {
   margin-top: 25px;
-  grid-area: 9 / 1 / 10 / 3;
+  grid-area: 9/1/10/3;
 }
-
-.ul-social {
+.social ul {
   list-style-type: none;
   align-self: center;
   align-items: center;
@@ -93,12 +95,15 @@ p {
 }
 
 .about {
-  grid-area: 4 / 10 / 6 / 14;
+  grid-area: 4/10/6/14;
 }
 
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
 .button {
   padding-top: 40px;
-  grid-area: 6 / 10 / 7 / 14;
+  grid-area: 6/10/7/14;
 }
 
 .fa {
@@ -109,7 +114,7 @@ p {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: white;
+  color: whitesmoke;
 }
 
 .fa:hover {
@@ -130,17 +135,19 @@ p {
 
 .button-2 {
   border-radius: 12px;
+  border: 1px solid #404258;
   text-align: center;
   text-decoration: none;
   font-size: 14px;
   margin: 4px 2px;
   cursor: pointer;
   padding: 5px 15px;
-  border: 1px solid #404258;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-
 }
 
+/*--------------------------------------------------------------
+# Links
+--------------------------------------------------------------*/
 a.button-3,
 a.button-2 {
   color: #404258;
@@ -157,17 +164,17 @@ a:hover.button-1 {
   color: coral;
 }
 
-a.button-1 {
-  color: white;
+.button-1 a {
+  color: whitesmoke;
 }
 
 a:link {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
 
 a:visited {
-  color: white;
+  color: whitesmoke;
 }
 
 a:hover {
@@ -175,5 +182,5 @@ a:hover {
 }
 
 a:active {
-  color: rgb(44, 44, 44);
-}
+  color: #404258;
+}/*# sourceMappingURL=style.css.map */
