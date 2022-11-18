@@ -39,13 +39,22 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
   gap: 0px 0px;
   grid-auto-flow: row;
 }
 
 .logo {
   grid-area: 1 / 1 / 2 / 2;
+}
+
+
+.menu {
+  grid-area: 1 / 5 / 2 / 6;
+}
+
+.ride {
+  grid-area: 1 / 1 / 11 / 6;
+  background-color: #404258;
 }
 
 .photo {
@@ -56,9 +65,18 @@ p {
   grid-area: 2 / 4 / 10 / 9;
 }
 
-.ride {
-  grid-area: 1 / 1 / 11 / 6;
-  background-color: #404258;
+.contact {
+  color: white;
+  font-size: 12px;
+  grid-area: 7 / 1 / 9 / 3;
+}
+
+.ul-contact {
+  list-style-type: none;
+  align-self: center;
+  align-items: center;
+  position: absolute;
+  line-height: 25px;
 }
 
 .social {
@@ -66,14 +84,12 @@ p {
   grid-area: 9 / 1 / 10 / 3;
 }
 
-.contact {
-  color: white;
-  font-size: 12px;
-  grid-area: 7 / 1 / 9 / 3;
-}
-
-.menu {
-  grid-area: 1 / 5 / 2 / 6;
+.ul-social {
+  list-style-type: none;
+  align-self: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
 }
 
 .about {
@@ -84,14 +100,6 @@ p {
   padding-top: 40px;
   grid-area: 6 / 10 / 7 / 14;
 }
-
-
-
-
-
-
-
-
 
 .fa {
   padding-right: 10px;
@@ -118,7 +126,6 @@ p {
   cursor: pointer;
   padding: 5px 15px;
   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
-
 }
 
 .button-2 {
@@ -150,7 +157,6 @@ a:hover.button-1 {
   color: coral;
 }
 
-
 a.button-1 {
   color: white;
 }
@@ -170,20 +176,4 @@ a:hover {
 
 a:active {
   color: rgb(44, 44, 44);
-}
-
-.ul-contact {
-  list-style-type: none;
-  align-self: center;
-  align-items: center;
-  position: absolute;
-  line-height: 25px;
-}
-
-.ul-social {
-  list-style-type: none;
-  align-self: center;
-  align-items: center;
-  position: absolute;
-  display: flex;
 }
