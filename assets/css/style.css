@@ -63,10 +63,15 @@ p {
   background-size: cover;
 }
 
+.about-card {
+  visibility: hidden;
+  display: none;
+}
+
 /*--------------------------------------------------------------
 # Smartphones
 --------------------------------------------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1280px) {
   .container {
     position: absolute;
     top: 0;
@@ -74,8 +79,8 @@ p {
     left: 0;
     right: 0;
     margin: auto;
-    width: 90%;
-    height: 90%;
+    width: 350px;
+    height: 550px;
     color: #404258;
     color: whitesmoke;
     background-color: #404258;
@@ -84,23 +89,27 @@ p {
   }
   .photo {
     background-image: url("../image/background.jpg");
-    height: 25%;
+    height: 50%;
   }
   .contact {
-    padding: 0;
-    margin-left: -25px;
+    margin-left: -15px;
+    margin-top: 15px;
   }
   .about {
     padding: 20px;
+    margin-top: -150px;
+  }
+  .about p {
+    color: #404258;
   }
   .social {
+    align-items: center;
+    align-content: center;
+    width: 100%;
     position: relative;
-    display: flex;
-    bottom: -150px;
-    left: -25px;
-  }
-  .button {
-    margin-top: -15px;
+    bottom: -125px;
+    left: -15px;
+    right: auto;
   }
   a.button-3,
 a.button-2 {
@@ -160,9 +169,16 @@ a:hover.button-1 {
     background-size: cover;
     border: 1px solid #404258;
   }
+  .button-1,
+.button-2 {
+    border: 1px solid whitesmoke;
+  }
+  .button-1 {
+    margin-left: 20px;
+  }
 }
 /*--------------------------------------------------------------
-# Computer
+# Computers
 --------------------------------------------------------------*/
 @media screen and (min-width: 1280px) {
   .container {
@@ -195,6 +211,34 @@ a:hover.button-1 {
   .photo {
     background-image: url("../image/background.jpg");
     grid-area: 2/4/10/9;
+  }
+  .photo:hover {
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    transform: rotateY(360deg);
+    background-color: rgb(44, 44, 44);
+    background-image: none;
+    border-radius: 25px;
+  }
+  .photo:hover .about-card {
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    padding: 20px;
+    color: whitesmoke;
+  }
+  .photo:hover .about-card img {
+    border: 3px solid whitesmoke;
+    width: 150px;
+    height: 150px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 50%;
   }
   .contact {
     color: whitesmoke;
